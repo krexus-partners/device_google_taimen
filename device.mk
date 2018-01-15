@@ -47,8 +47,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \
 
 # Logging
-PRODUCT_COPY_FILES += \
-    device/google/taimen/init.logging.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.$(PRODUCT_HARDWARE).logging.rc
+#PRODUCT_COPY_FILES += \
+#    device/google/taimen/init.logging.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.$(PRODUCT_HARDWARE).logging.rc
 
 
 PRODUCT_COPY_FILES += \
@@ -99,7 +99,7 @@ PRODUCT_COPY_FILES += \
     device/google/taimen/touchscreen.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/touchscreen.idc
 
 # Enable modem logging
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.modem.diag.qdb=0\
     persist.sys.modem.diag.mdlog=true \
