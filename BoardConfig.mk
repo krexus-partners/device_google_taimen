@@ -84,7 +84,7 @@ WITHOUT_CHECK_API := true
 ANDROID_NO_TEST_CHECK := true
 
 # Install odex files into the other system image
-BOARD_USES_SYSTEM_OTHER_ODEX := false
+BOARD_USES_SYSTEM_OTHER_ODEX := true
 
 BOARD_ROOT_EXTRA_FOLDERS := persist firmware metadata
 TARGET_ANDROID_FILESYSTEM_CONFIG_H := device/google/wahoo/android_filesystem_config.h
