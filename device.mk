@@ -41,7 +41,7 @@ PRODUCT_COPY_FILES += \
     device/google/taimen/privapp-permissions-taimen.xml:$(TARGET_OUT_ETC)/permissions/privapp-permissions-taimen.xml
 
 # Audio
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES_OVERRIDES += \
     device/google/taimen/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     device/google/taimen/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml
 
@@ -65,7 +65,7 @@ PRODUCT_COPY_FILES += \
     device/google/taimen/thermal-engine-vr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-vr.conf
 
 # Audio
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES_OVERRIDES += \
     device/google/taimen/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil_taimen.xml \
     device/google/taimen/audio_platform_info_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_tavil_taimen.xml
 
