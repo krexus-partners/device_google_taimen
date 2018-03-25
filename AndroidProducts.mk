@@ -18,4 +18,4 @@ LOCAL_PATH := $(call my-dir)
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_taimen.mk \
-    vendor/nexus/products/taimen.mk
+    vendor/krexus/products/taimen.mk
